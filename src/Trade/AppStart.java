@@ -1,5 +1,9 @@
 package Trade;
 
-public class AppStart {
+import Trade.view.ProductView;
 
+public class AppStart {
+    public static void main(String[] args) {
+        ProductView.getInstance().index();
+    }
 }
