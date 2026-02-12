@@ -62,6 +62,7 @@ public class ProductView {
         ArrayList<ProductDto> p = pc.findAll();
         System.out.println("\n----- \uD83D\uDCCB 전체 물품 목록 \uD83D\uDCCB -----------------------------------------");
         System.out.println("번호  |  물품명  |  가격  |  닉네임  |  등록일  |  판매여부  |  연락처 출력");
+        System.out.println("-----------------------------------------------------------------------");
         for(ProductDto list : p) {
             System.out.printf("%d  |  %s  |  %d  |  %s  |  %s  |  %s  |  %s\n",
                     list.getPno(),list.getPpro(),list.getPpri(),list.getPname(),list.getPdate(),list.getPout(),list.getPpn());
