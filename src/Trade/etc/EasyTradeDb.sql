@@ -11,7 +11,7 @@ CREATE TABLE product(
     ppri int not null,
     ppw varchar(50) not null,
     ppn char(13),
-    pdate date,
+    pdate date default (current_date) NOT NULL,
     pout varchar(5)
 );
 
